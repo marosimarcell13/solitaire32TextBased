@@ -1,0 +1,1 @@
+# solitaire32TextBased
