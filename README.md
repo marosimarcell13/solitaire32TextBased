@@ -4,7 +4,7 @@ A text-based implementation of a simple Solitaire variant written in Python. Thi
 
 ## Game Overview
 
-This solitaire game uses a custom deck where cards range from **7** to **ZS** (presumably Jack, Ace, Queen, King, Joker equivalents), and suits are:
+This solitaire game uses a custom deck where cards range from **7** to **ZS** (presumably Jack, Ace, Queen, King equivalents), and suits are:
 - `tok`
 - `makk`
 - `sziv`
