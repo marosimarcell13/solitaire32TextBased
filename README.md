@@ -35,18 +35,17 @@ You then interact with the game using typed commands in the terminal.
 ## Commands
 
 You can enter the following commands:
-
-| Command | Description |
-|--------|-------------|
-| `dw` | Deal one card from the deck to the waste pile |
-| `wf` | Move the top card from the waste pile to the foundation |
-| `wt #` | Move the top card from the waste pile to table stack `#` (1–4) |
-| `tf #` | Move the top card from table stack `#` to the foundation |
-| `tt #1 #2` | Move the top card from table stack `#1` to table stack `#2` |
-| `tm #1 #2 CN` | Move multiple cards starting from card name `CN` in table stack `#1` to `#2` |
-| `lw` | Move a card from the locked pile to the waste (if waste and deck are empty) |
-| `h` | Display help (list of commands) |
-| `q` | Quit the game |
+h — Show help (list all commands)
+q — Quit the game
+pt — Print the current gaming area (board)
+ta — Toggle auto draw (draw a card automatically if waste is empty)
+dw — Move a card from deck to waste
+wf — Move the top card from waste to foundation
+wt #T — Move the top card from waste to table stack #T (1 to 4)
+tf #T — Move the top card from table stack #T to foundation
+tt #T1 #T2 — Move the last card from table stack #T1 to #T2
+tt #T1 #T2 #CV — Move cards starting from card value #CV in stack #T1 to #T2
+lw — Move one locked card to waste (only possible if waste is empty and deck is empty)
 
 **Examples**:
 - `wt 2`: Move from waste to table stack 2.
@@ -83,3 +82,4 @@ No external libraries are required.
 
 ```bash
 python3 solitaire.py
+
